@@ -1,18 +1,59 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`</title>
-        Ayu Rahmawati
-        XII.G
-    </head>
-    <body>
-        <form class="" action="">
-            <input required type="text" name="" id="" value="" placeholder="Nama Lengkap" />
-            <input required type="email" name="" id="" value="" placeholder="Email" />
-            <input required type="password" name="" id="" value="" placeholder="password" />
-            <input required type="number" name="" id="" value="" placeholder="Nomor HP"/>
-            <input required type="date" name="" id="" value="" placeholder="Tanggal Lahir" />
-            <button type="submit" style="color: blur"></button>
-        </form>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulir Ponyo Lucu | Ayu Rahmawati XII.G</title>
+  <!-- Import font yang lucu dan friendly -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Judul utama -->
+  <h1>🐟 Formulir Ponyo</h1>
+
+  <!-- Gambar Ponyo lucu -->
+  <img src="https://i.ibb.co/TW0cXKD/ponyo-cute.png" alt="Ponyo Lucu" class="ponyo-img">
+
+  <!-- Formulir input -->
+  <form id="registerform">
+    <!-- Input nama -->
+    <input required type="text" name="nama" id="nama" placeholder="Nama Lengkap">
+    
+    <!-- Input email -->
+    <input required type="email" name="email" id="email" placeholder="Email">
+    
+    <!-- Input password -->
+    <input required type="password" name="password" id="password" placeholder="Kata Sandi">
+    
+    <!-- Input nomor HP -->
+    <input required type="number" name="phone_number" id="phone_number" placeholder="Nomor HP">
+    
+    <!-- Input tanggal lahir -->
+    <input required type="date" name="tanggal_lahir" id="tanggal_lahir">
+
+    <!-- Input jenis kelamin -->
+    <div class="radio-group">
+      <label>Jenis Kelamin:</label>
+      <input type="radio" name="gender" id="laki-laki" value="laki-laki">
+      <label for="laki-laki">Laki-laki</label>
+      <input type="radio" name="gender" id="wanita" value="wanita">
+      <label for="wanita">Wanita</label>
+    </div>
+
+    <!-- Tombol submit -->
+    <button type="submit">Daftar Sekarang</button>
+  </form>
+
+  <!-- Tabel untuk menampilkan data yang diinput -->
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Email</th>
+        <th>No HP</th>
+        <th>Tanggal Lahir</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</body>
 </html>
