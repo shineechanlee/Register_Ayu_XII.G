@@ -1,0 +1,127 @@
+ /* Gaya umum untuk body */
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #c6f0ef, #d9fdf2); /* gradasi biru-hijau muda */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Judul halaman */
+    h1 {
+      margin-top: 25px;
+      color: #3a6c81;
+      text-shadow: 1px 1px #e6f5f4;
+    }
+
+    /* Gambar Ponyo yang mengambang */
+    .ponyo-img {
+      width: 120px;
+      margin-top: 10px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    /* Animasi gambar mengambang naik-turun */
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    /* Kotak formulir */
+    form {
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 4px 14px #b6dfdb;
+      width: 320px;
+      margin: 20px 0;
+    }
+
+    /* Input form */
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #adebe3;
+      border-radius: 10px;
+      background-color: #f6fffc;
+      font-size: 14px;
+    }
+
+    /* Efek saat input diklik */
+    input:focus {
+      outline: none;
+      background-color: #e3f9f5;
+      border-color: #6ec8bc;
+    }
+
+    /* Kelompok radio button jenis kelamin */
+    .radio-group {
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #3a6c81;
+    }
+
+    /* Label jenis kelamin */
+    label[for="laki-laki"],
+    label[for="wanita"] {
+      margin-right: 10px;
+    }
+
+    /* Tombol submit */
+    button {
+      margin-top: 20px;
+      background-color: #6ec8bc;
+      color: white;
+      font-weight: bold;
+      padding: 10px;
+      border: none;
+      border-radius: 24px;
+      width: 100%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Efek hover tombol */
+    button:hover {
+      background-color: #58b1a6;
+    }
+
+    /* Tabel data yang diisi pengguna */
+    table {
+      background-color: #ffffff;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px #d0f1ed;
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 650px;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #e6f5f4;
+      text-align: left;
+    }
+
+    th {
+      background-color: #b3eae4;
+      color: #245a64;
+    }
+
+    td {
+      background-color: #faffff;
+    }
+
+    /* Responsif untuk layar kecil */
+    @media (max-width: 400px) {
+      form, table {
+        width: 90%;
+      }
+    }
