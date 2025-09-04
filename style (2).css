@@ -1,0 +1,50 @@
+.welcome {
+  height:100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.welcome h1 {
+  font-size:20px;
+  margin: 0px;
+  margin-bottom:20px;
+}
+.divider {
+  width: 1px;
+  height: 25px;
+  background-color: #5F7394;
+  margin: 0 10px;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  margin: 10px 0px;
+}
+.links a {
+  color: #5F7394;
+  text-decoration: underline;
+  margin: 0 10px;
+}
+.counter-container {
+  margin-top: 20px;
+}
+.counter-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #5F7394;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.counter-button:hover {
+  background-color: #2A4D77;
+}
+.counter-display {
+  font-size: 18px;
+  margin-top: 10px;
+}
